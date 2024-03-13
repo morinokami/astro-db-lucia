@@ -1,0 +1,22 @@
+---
+const user = {
+	id: 123,
+	username: 'astronaut',
+}
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Lucia example</title>
+	</head>
+	<body>
+		<h1>Hi, {user.username}!</h1>
+		<p>Your user ID is {user.id}.</p>
+		<form method="post" action="/api/logout">
+			<button>Sign out</button>
+		</form>
+	</body>
+</html>
