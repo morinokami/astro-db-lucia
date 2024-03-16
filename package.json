@@ -5,12 +5,12 @@
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
-		"build": "astro check && astro build --remote",
+		"check": "astro check",
+		"build": "astro build --remote",
 		"preview": "astro preview",
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/check": "^0.5.9",
 		"@astrojs/db": "^0.8.2",
 		"@astrojs/vercel": "^7.3.6",
 		"@lucia-auth/adapter-drizzle": "^1.0.3",
@@ -21,6 +21,7 @@
 		"typescript": "^5.4.2"
 	},
 	"devDependencies": {
+		"@astrojs/check": "^0.5.9",
 		"@types/better-sqlite3": "^7.6.9",
 		"prettier": "^3.2.5",
 		"prettier-plugin-astro": "^0.13.0"
